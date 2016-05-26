@@ -20,7 +20,7 @@ import com.cloudant.client.api.CloudantClient;
 import com.cloudant.client.api.Database;
 
 /**
- * Executable class to showcase Cloudant database functionality. So far, so good!
+ * Executable class to showcase Cloudant database functionality.
  *
  * @author Rafa Nogueras rafaeln
  */
