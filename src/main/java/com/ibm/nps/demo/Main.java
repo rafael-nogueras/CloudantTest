@@ -33,7 +33,7 @@ public class Main {
         // Show the server version
         System.out.println("Server Version: " + client.serverVersion());
 
-        // Get a handle on our database, but don't create it if it doesn't already exist
+        // Get a handle on our database, but don't create it if it doesn't already exist.
         Database db = client.database("rafaeln", false);
 
         // Create an NetPromoterScore object and save it in the database
@@ -41,7 +41,7 @@ public class Main {
         db.save(netPromoterScore);
         System.out.println("You have inserted a new document");
 
-        // Get an NetPromoterScore out of the database and deserialize the JSON into a Java type
+        // Get an NetPromoterScore out of the database and deserialize the JSON into a Java type.
         NetPromoterScore doc = db.find(NetPromoterScore.class, netPromoterScore.getId());
         System.out.println(doc);
     }
