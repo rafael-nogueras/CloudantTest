@@ -25,10 +25,15 @@ import com.cloudant.client.api.Database;
  * @author Rafa Nogueras rafaeln
  */
 public class Main {
+
+    private static final String CLOUDANT_URL = "https://df9efa23-987c-434d-a177-ea16c91c491b-bluemix.cloudant.com/_all_dbs";
+    private static final String API_TOKEN = "urionditengsolowerespera";
+    private static final String API_PASSWORD = "25af816fd95e7f7ca7b22288ff8f9521ba4d8487";
+
     public static void main(String[] args) throws MalformedURLException {
-        CloudantClient client = ClientBuilder.url(new URL("https://df9efa23-987c-434d-a177-ea16c91c491b-bluemix.cloudant.com/_all_dbs"))
-                .username("urionditengsolowerespera")
-                .password("25af816fd95e7f7ca7b22288ff8f9521ba4d8487")
+        CloudantClient client = ClientBuilder.url(new URL(CLOUDANT_URL))
+                .username(API_TOKEN)
+                .password(API_PASSWORD)
                 .build();
 
         // Show the server version
